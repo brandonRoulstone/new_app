@@ -1,8 +1,7 @@
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useState } from 'react';
-import ParallaxCarousel from './ParallaxCarousel';
 import { FiArrowRight, FiArrowUpRight, FiPlus } from 'react-icons/fi';
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 import { CardProps, functionProps, ButtonProps } from '@/Libs/props';
 import Image from 'next/image';
 
@@ -150,10 +149,9 @@ const HomeMiddleSection: React.FC = () => {
 export const HomePage: React.FC = () => {
     return (
         <>
-            <NextSeo title='Home - Flowgrid Digital' />
+            {/* <NextSeo title='Home - Flowgrid Digital' /> */}
             <HomeLandingSection />
             <HomeMiddleSection />
-            <ParallaxCarousel />
         </>
     );
 };
